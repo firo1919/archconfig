@@ -1,0 +1,119 @@
+{
+  "app_config": {
+    "audio_config": {
+      "audio": "pipewire"
+    },
+    "bluetooth_config": {
+      "enabled": true
+    },
+    "power_management_config": {
+      "power_management": "power-profiles-daemon"
+    },
+    "print_service_config": {
+      "enabled": true
+    }
+  },
+  "archinstall-language": "English",
+  "auth_config": {},
+  "bootloader_config": {
+    "bootloader": "Systemd-boot",
+    "removable": false,
+    "uki": false
+  },
+  "custom-commands": [
+      "usermod -aG docker firomsa",
+      "pacman-key --init",
+      "pacman-key --populate archlinux",
+      "pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com",
+      "pacman-key --lsign-key 3056513887B78AEB",
+      "pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'",
+      "pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'"
+      "echo -e '\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist\n' | sudo tee -a /etc/pacman.conf",
+      "pacman -Syy --noconfirm helium-browser-bin localsend mtkclient-git cloudflared paru postman-bin spotify ttf-ms-fonts",
+    ],
+  "hostname": "noone",
+  "kernels": ["linux"],
+  "locale_config": {
+    "kb_layout": "us",
+    "sys_enc": "UTF-8",
+    "sys_lang": "en_US.UTF-8"
+  },
+  "network_config": {
+    "type": "nm"
+  },
+  "ntp": true,
+  "packages": [
+    "age",
+    "android-tools",
+    "base-devel",
+    "bash-completion",
+    "bat",
+    "bat-extras",
+    "dconf-editor",
+    "docker",
+    "docker-buildx",
+    "docker-compose",
+    "extension-manager",
+    "eza",
+    "github-cli"
+    "fastfetch",
+    "foliate",
+    "fzf",
+    "ghostty",
+    "git",
+    "gufw",
+    "htop",
+    "scrcpy"
+    "jdk21-openjdk",
+    "jq",
+    "lazydocker",
+    "less",
+    "libreoffice-fresh",
+    "maven",
+    "noto-fonts-cjk",
+    "noto-fonts-emoji",
+    "obsidian",
+    "plymouth",
+    "python-pip",
+    "qbittorrent",
+    "qpwgraph",
+    "rbw",
+    "rclone",
+    "sops",
+    "starship",
+    "stow",
+    "tealdeer",
+    "telegram-desktop",
+    "trash-cli",
+    "ttf-cascadia-mono-nerd",
+    "ufw",
+    "usbutils",
+    "vim",
+    "vlc",
+    "vlc-plugins-all",
+    "yazi",
+    "yt-dlp",
+    "zed",
+    "zoxide",
+  ],
+  "parallel_downloads": 0,
+  "profile_config": {
+    "gfx_driver": "Intel (open-source)",
+    "greeter": "gdm",
+    "profile": {
+      "custom_settings": {
+        "GNOME": {}
+      },
+      "details": ["GNOME"],
+      "main": "Desktop"
+    }
+  },
+  "script": null,
+  "services": [],
+  "swap": {
+    "algorithm": "zstd",
+    "enabled": true
+  },
+  "timezone": "Africa/Addis_Ababa",
+  "version": "3.0.15"
+}
