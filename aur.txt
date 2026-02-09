@@ -1,6 +1,3 @@
-appimagelauncher
-fresh-editor-bin
 jdtls
 plymouth-theme-monoarch 
-rclone-manager 
 todoist-appimage

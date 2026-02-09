@@ -29,7 +29,7 @@
       "pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'",
       "pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'"
       "echo -e '\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist\n' | sudo tee -a /etc/pacman.conf",
-      "pacman -Syy --noconfirm helium-browser-bin localsend mtkclient-git cloudflared paru postman-bin spotify ttf-ms-fonts",
+      "pacman -Syyu --noconfirm helium-browser-bin fresh-editor localsend paru postman-bin spotify ttf-ms-fonts",
     ],
   "hostname": "noone",
   "kernels": ["linux"],
@@ -49,6 +49,7 @@
     "bash-completion",
     "bat",
     "bat-extras",
+    "cloudflared"
     "dconf-editor",
     "docker",
     "docker-buildx",
@@ -96,17 +97,9 @@
     "zed",
     "zoxide",
   ],
-  "parallel_downloads": 0,
+  "parallel_downloads": 5,
   "profile_config": {
-    "gfx_driver": "Intel (open-source)",
-    "greeter": "gdm",
-    "profile": {
-      "custom_settings": {
-        "GNOME": {}
-      },
-      "details": ["GNOME"],
-      "main": "Desktop"
-    }
+    "gfx_driver": "Intel (open-source)"
   },
   "script": null,
   "services": [],
