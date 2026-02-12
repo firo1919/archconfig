@@ -29,7 +29,7 @@
       "pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'",
       "pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'"
       "echo -e '\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist\n' | sudo tee -a /etc/pacman.conf",
-      "pacman -Syyu --noconfirm helium-browser-bin fresh-editor localsend paru postman-bin spotify ttf-ms-fonts",
+      "pacman -Syyu visual-studio-code-bin --noconfirm helium-browser-bin fresh-editor localsend paru postman-bin spotify ttf-ms-fonts",
     ],
   "hostname": "noone",
   "kernels": ["linux"],
