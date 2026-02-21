@@ -59,7 +59,7 @@
         "git",
         "gufw",
         "htop",
-        "jdk21-openjdk",
+        "jdk-openjdk",
         "jq",
         "lazydocker",
         "less",
