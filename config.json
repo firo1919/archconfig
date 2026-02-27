@@ -24,7 +24,7 @@
         "echo -e '\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist\n' >> /etc/pacman.conf",
         "pacman -Syyu --noconfirm",
         "getent passwd firomsa && usermod -aG docker,wheel,video,audio firomsa",
-        "pacman -S --noconfirm pacui blesh-git visual-studio-code-bin helium-browser-bin fresh-editor localsend paru postman-bin spotify ttf-ms-fonts"
+        "pacman -S --noconfirm pacui blesh-git visual-studio-code-bin brave-bin fresh-editor localsend paru postman-bin ttf-ms-fonts"
     ],
     "kernels": ["linux"],
     "locale_config": {
