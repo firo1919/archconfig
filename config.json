@@ -26,7 +26,6 @@
         "getent passwd firomsa && usermod -aG docker,wheel,video,audio firomsa",
         "pacman -S --noconfirm pacui blesh-git visual-studio-code-bin helium-browser-bin fresh-editor localsend paru postman-bin spotify ttf-ms-fonts"
     ],
-    "hostname": "noone",
     "kernels": ["linux"],
     "locale_config": {
         "kb_layout": "us",
@@ -69,6 +68,7 @@
         "noto-fonts-cjk",
         "noto-fonts-emoji",
         "nodejs",
+        "nm-connection-editor",
         "ncdu",
         "obsidian",
         "plymouth",
@@ -102,7 +102,5 @@
     "swap": {
         "algorithm": "zstd",
         "enabled": true
-    },
-    "timezone": "Africa/Addis_Ababa",
-    "version": "3.0.15"
+    }
 }
