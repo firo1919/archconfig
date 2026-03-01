@@ -1,3 +1,2 @@
 plymouth-theme-monoarch 
-todoist-appimage
 xytz-bin
