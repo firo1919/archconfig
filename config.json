@@ -76,6 +76,7 @@
         "qpwgraph",
         "rbw",
         "rclone",
+        "restic",
         "scrcpy",
         "sops",
         "starship",
